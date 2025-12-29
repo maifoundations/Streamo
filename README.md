@@ -8,6 +8,13 @@
 
 This is the official implementation of the paper 'Streaming Video Instruction Tuning'.
 
+# Demo🎬
+
+<p align="center">
+  <video src="assets/demo.mp4" controls="controls" width="800">
+  </video>
+</p>
+
 # News📰
 * **`[2025/12/24]`:**🔥**We have released our paper [[Arxiv](https://arxiv.org/abs/2512.21334)].**
 
