@@ -10,12 +10,12 @@ This is the official implementation of the paper 'Streaming Video Instruction Tu
 
 # Demo🎬
 
-<iframe width="560" height="315"
-  src="https://www.youtube.com/embed/lGRdBP-SYeo"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-  allowfullscreen>
-</iframe>
+<p align="center">
+  <a href="https://youtu.be/lGRdBP-SYeo">
+    <img src="https://img.youtube.com/vi/lGRdBP-SYeo/maxresdefault.jpg" alt="Demo Video" width="800">
+  </a>
+</p>
+
 # News📰
 * **`[2025/12/24]`:**🔥**We have released our paper [[Arxiv](https://arxiv.org/abs/2512.21334)].**
 
