@@ -3,10 +3,16 @@
 <p align="center"><i>A real-time streaming video LLM that serves as a general-purpose interactive assistant.</i></p>
 
 <p align="center">
-         📑 <a href="https://arxiv.org/abs/2512.21334">Paper</a>  &nbsp&nbsp 
+         📑 <a href="https://arxiv.org/abs/2512.21334">Paper</a>  &nbsp&nbsp 🌐 <a href="https://jiaerxia.github.io/Streamo/">Web</a>
 </p>
 
 This is the official implementation of the paper 'Streaming Video Instruction Tuning'.
+
+
+# News📰
+* **`[2026/1/6]`:**🔥**We have released our website with more interesting demos [[Web](https://jiaerxia.github.io/Streamo/)].**
+* **`[2025/12/24]`:**🔥**We have released our paper [[Arxiv](https://arxiv.org/abs/2512.21334)].**
+
 
 # Demo🎬
 
@@ -16,8 +22,6 @@ This is the official implementation of the paper 'Streaming Video Instruction Tu
   </a>
 </p>
 
-# News📰
-* **`[2025/12/24]`:**🔥**We have released our paper [[Arxiv](https://arxiv.org/abs/2512.21334)].**
 
 
 # Citation🎓
