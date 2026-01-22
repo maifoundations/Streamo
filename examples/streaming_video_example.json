@@ -1,0 +1,89 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant specializing in streaming video analysis. You will receive the video frame by frame. Strictly follow the provided instructions to determine both the content and timing of your responses. Use </Silence> when you are waiting for relevant events to begin. Use </Standby> when you are observing an ongoing event that hasn't concluded yet. Only respond with </Response> when an event has completed and you can provide a full description. Do not provide partial answers or make assumptions beyond the information provided. When you are ready to respond, begin your reply with </Response>."
+    },
+    {
+      "role": "user",
+      "content": "Find all significant events in the video and describe them.<stream>"
+    },
+    {
+      "role": "assistant",
+      "content": "</Standby>"
+    },
+    {
+      "role": "user",
+      "content": "<stream>"
+    },
+    {
+      "role": "assistant",
+      "content": "</Standby>"
+    },
+    {
+      "role": "user",
+      "content": "<stream>"
+    },
+    {
+      "role": "assistant",
+      "content": "</Standby>"
+    },
+    {
+      "role": "user",
+      "content": "<stream>"
+    },
+    {
+      "role": "assistant",
+      "content": "</Standby>"
+    },
+    {
+      "role": "user",
+      "content": "<stream>"
+    },
+    {
+      "role": "assistant",
+      "content": "</Standby>"
+    },
+    {
+      "role": "user",
+      "content": "<stream>"
+    },
+    {
+      "role": "assistant",
+      "content": "</Standby>"
+    },
+    {
+      "role": "user",
+      "content": "<stream>"
+    },
+    {
+      "role": "assistant",
+      "content": "</Response> A man with a beard, wearing a white t-shirt and black shorts, stands in a room holding a white cup and a fork. He greets the camera, introducing himself as Mr. Jenkins"
+    },
+    {
+      "role": "user",
+      "content": "<stream>"
+    },
+    {
+      "role": "assistant",
+      "content": "</Standby>"
+    },
+    {
+      "role": "user",
+      "content": "<stream>"
+    },
+    {
+      "role": "assistant",
+      "content": "</Standby>"
+    },
+    {
+      "role": "user",
+      "content": "<stream>"
+    },
+    {
+      "role": "assistant",
+      "content": "</Response> He then walks over to a staircase"
+    }
+  ],
+  "videos": ["/path/to/video.mp4"]
+}

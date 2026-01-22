@@ -1,0 +1,1246 @@
+[
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "\nYou are a helpful assistant specializing in streaming video analysis. \nYou will receive input frame by frame, each labeled with absolute time intervals \nin the exact format <Xs-Ys> (e.g., <0s-1s>). Follow these rules precisely:\n\n1. Use </Silence> when:\n   - No relevant event has started, OR\n   - The current input is irrelevant to the given question.  \n\n2. Use </Standby> when:\n   - An event is in progress but has not yet completed, OR\n   - The current input is relevant but the question cannot yet be answered.  \n\n3. Use </Response> only when:\n   - An event has fully concluded, OR\n   - The available information is sufficient to fully answer the question.\n   Provide a complete description at this point.  \n\nDo not provide partial answers or speculate beyond the given information.  \nWhenever you deliver an answer, begin with </Response>.\n"
+      },
+      {
+        "role": "user",
+        "content": "What event is the person with long blonde hair being interviewed at in front of a poster for 'The Beguiled'?\n<0s-1s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<1s-2s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<2s-3s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<3s-4s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "What event is the person with long blonde hair being interviewed at in front of a poster for 'The Beguiled'?\n<4s-5s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Standby>"
+      },
+      {
+        "role": "user",
+        "content": "<5s-6s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Standby>"
+      },
+      {
+        "role": "user",
+        "content": "<6s-7s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Response> The person is being interviewed at a red carpet event in front of a poster for 'The Beguiled.'"
+      },
+      {
+        "role": "user",
+        "content": "<7s-8s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<8s-9s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<9s-10s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<10s-11s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<11s-12s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<12s-13s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<13s-14s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<14s-15s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<15s-16s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<16s-17s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<17s-18s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<18s-19s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<19s-20s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<20s-21s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<21s-22s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<22s-23s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<23s-24s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<24s-25s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<25s-26s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<26s-27s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<27s-28s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<28s-29s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<29s-30s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<30s-31s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<31s-32s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<32s-33s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<33s-34s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<34s-35s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<35s-36s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<36s-37s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<37s-38s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<38s-39s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<39s-40s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<40s-41s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<41s-42s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<42s-43s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<43s-44s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<44s-45s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<45s-46s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<46s-47s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<47s-48s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<48s-49s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<49s-50s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<50s-51s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<51s-52s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<52s-53s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<53s-54s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<54s-55s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<55s-56s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<56s-57s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<57s-58s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<58s-59s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<59s-60s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<60s-61s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<61s-62s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<62s-63s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<63s-64s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<64s-65s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<65s-66s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<66s-67s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<67s-68s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<68s-69s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<69s-70s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<70s-71s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<71s-72s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<72s-73s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<73s-74s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<74s-75s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<75s-76s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      }
+    ],
+    "videos": [
+      "LLaVA_Video/1_2_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_ls8tmkfD7S0.mp4"
+    ],
+    "video_name": "ytb_ls8tmkfD7S0.mp4",
+    "task_type": "QA",
+    "source": "LLaVA_Video"
+  },
+  {
+    "messages": [
+      {
+        "role": "system",
+        "content": "\nYou are a helpful assistant specializing in streaming video analysis. \nYou will receive input frame by frame, each labeled with absolute time intervals \nin the exact format <Xs-Ys> (e.g., <0s-1s>). Follow these rules precisely:\n\n1. Use </Silence> when:\n   - No relevant event has started, OR\n   - The current input is irrelevant to the given question.  \n\n2. Use </Standby> when:\n   - An event is in progress but has not yet completed, OR\n   - The current input is relevant but the question cannot yet be answered.  \n\n3. Use </Response> only when:\n   - An event has fully concluded, OR\n   - The available information is sufficient to fully answer the question.\n   Provide a complete description at this point.  \n\nDo not provide partial answers or speculate beyond the given information.  \nWhenever you deliver an answer, begin with </Response>.\n"
+      },
+      {
+        "role": "user",
+        "content": "What is the interviewer holding during the first red carpet event?\n<0s-1s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<1s-2s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "What is the interviewer holding during the first red carpet event?\n<2s-3s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<3s-4s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<4s-5s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Standby>"
+      },
+      {
+        "role": "user",
+        "content": "<5s-6s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Standby>"
+      },
+      {
+        "role": "user",
+        "content": "<6s-7s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Response> A microphone with the 'ET' logo."
+      },
+      {
+        "role": "user",
+        "content": "<7s-8s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<8s-9s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<9s-10s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<10s-11s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<11s-12s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<12s-13s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<13s-14s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<14s-15s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<15s-16s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<16s-17s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<17s-18s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<18s-19s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<19s-20s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<20s-21s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<21s-22s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<22s-23s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<23s-24s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<24s-25s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<25s-26s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<26s-27s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<27s-28s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<28s-29s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<29s-30s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<30s-31s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<31s-32s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<32s-33s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<33s-34s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<34s-35s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<35s-36s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<36s-37s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<37s-38s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<38s-39s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<39s-40s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<40s-41s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<41s-42s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<42s-43s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<43s-44s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<44s-45s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<45s-46s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<46s-47s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<47s-48s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<48s-49s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<49s-50s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<50s-51s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<51s-52s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<52s-53s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<53s-54s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<54s-55s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<55s-56s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<56s-57s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<57s-58s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<58s-59s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<59s-60s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<60s-61s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<61s-62s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<62s-63s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<63s-64s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<64s-65s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<65s-66s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<66s-67s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<67s-68s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<68s-69s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<69s-70s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<70s-71s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<71s-72s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<72s-73s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<73s-74s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<74s-75s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      },
+      {
+        "role": "user",
+        "content": "<75s-76s>\n<stream>"
+      },
+      {
+        "role": "assistant",
+        "content": "</Silence>"
+      }
+    ],
+    "videos": [
+      "LLaVA_Video/1_2_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_ls8tmkfD7S0.mp4"
+    ],
+    "video_name": "ytb_ls8tmkfD7S0.mp4",
+    "task_type": "QA",
+    "source": "LLaVA_Video"
+  }
+]

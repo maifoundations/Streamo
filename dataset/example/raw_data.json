@@ -1,0 +1,42 @@
+[
+{
+    "video_name": "ytb_ls8tmkfD7S0.mp4",
+    "video_path": "LLaVA_Video/1_2_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_ls8tmkfD7S0.mp4",
+    "task_type": "QA",
+    "source": "LLaVA_Video",
+    "question": [
+      {
+        "content": "What event is the person with long blonde hair being interviewed at in front of a poster for 'The Beguiled'?",
+        "time": "5"
+      }
+    ],
+    "response": [
+      {
+        "content": "The person is being interviewed at a red carpet event in front of a poster for 'The Beguiled.'",
+        "st_time": 5.0,
+        "end_time": 6.0,
+        "time": ""
+      }
+    ]
+  },
+  {
+    "video_name": "ytb_ls8tmkfD7S0.mp4",
+    "video_path": "LLaVA_Video/1_2_m_youtube_v0_1/liwei_youtube_videos/videos/youtube_video_2024/ytb_ls8tmkfD7S0.mp4",
+    "task_type": "QA",
+    "source": "LLaVA_Video",
+    "question": [
+      {
+        "content": "What is the interviewer holding during the first red carpet event?",
+        "time": "3"
+      }
+    ],
+    "response": [
+      {
+        "content": "A microphone with the 'ET' logo.",
+        "st_time": 5.0,
+        "end_time": 6.0,
+        "time": ""
+      }
+    ]
+  }
+]
