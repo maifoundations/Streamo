@@ -3,16 +3,19 @@
 <p align="center"><i>A real-time streaming video LLM that serves as a general-purpose interactive assistant.</i></p>
 
 <p align="center">
-         📑 <a href="https://arxiv.org/abs/2512.21334">Paper</a>  &nbsp&nbsp 🌐 <a href="https://jiaerxia.github.io/Streamo/">Web</a>
+         📑 <a href="https://arxiv.org/abs/2512.21334">Paper</a>  &nbsp|&nbsp  🌐 <a href="https://jiaerxia.github.io/Streamo/">Web</a>  &nbsp|&nbsp 🤗 <a href="https://huggingface.co/datasets/maifoundations/Streamo-Instruct-465K">Huggingface</a>
 </p>
 
 This is the official implementation of the paper 'Streaming Video Instruction Tuning'.
 
 
 # News📰
+* **`[2026/1/27]`:**🔥**We have released the Streamo-Instruct dataset.[[HF](https://huggingface.co/datasets/maifoundations/Streamo-Instruct-465K)].**
 * **`[2026/1/22]`:**🔥**We have released our training code.**
 * **`[2026/1/6]`:**🔥**We have released our website with more interesting demos [[Web](https://jiaerxia.github.io/Streamo/)].**
 * **`[2025/12/24]`:**🔥**We have released our paper [[Arxiv](https://arxiv.org/abs/2512.21334)].**
+
+> **Note:** Due to some restrictions, we are unable to publicly release the model weights at this time. If you have any request, please feel free to contact us.
 
 
 # Demo🎬
