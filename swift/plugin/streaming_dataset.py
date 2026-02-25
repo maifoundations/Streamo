@@ -18,13 +18,13 @@ from swift.llm.dataset.dataset import register_streaming_video_dataset
 # Register the streaming video dataset with optimized settings
 # save_frames=True enables disk caching - first run extracts frames, subsequent runs load from disk
 register_streaming_video_dataset(
-    dataset_path='./dataset/stream/llava.jsonl',
+    dataset_path='./dataset/example/stream_format.json',
     dataset_name='streaming_video',
     fps=1.0,
     max_frames=None,  # No limit
     save_frames=True,  # Enable disk caching for efficiency (recommended for multi-epoch training)
     frame_output_dir='./dataset/stream/frames',  # Frame cache directory
-    enable_memory_cache=True,  # Enable in-memory LRU cache
+    enable_memory_cache=False,  # Enable in-memory LRU cache
 )
 
 print("Registered streaming_video dataset with optimized frame extraction (disk cache enabled)")

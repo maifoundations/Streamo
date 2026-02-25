@@ -24,7 +24,7 @@ def register_streaming_video_dataset(
     frame_output_dir: str = None,
     save_frames: bool = False,
     num_workers: int = 8,  # Number of threads for parallel frame saving
-    enable_memory_cache: bool = True,  # Enable in-memory LRU cache
+    enable_memory_cache: bool = False,  # Enable in-memory LRU cache
     **kwargs
 ) -> DatasetMeta:
     """
@@ -38,7 +38,7 @@ def register_streaming_video_dataset(
         frame_output_dir: Directory to save extracted frames (only used if save_frames=True)
         save_frames: Whether to save frames to disk (False = in-memory PIL images)
         num_workers: Number of threads for parallel frame saving
-        enable_memory_cache: Enable in-memory LRU cache for repeated access (default: True)
+        enable_memory_cache: Enable in-memory LRU cache for repeated access (default: False)
         **kwargs: Additional DatasetMeta arguments
         
     Returns:

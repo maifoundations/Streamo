@@ -10,6 +10,7 @@ This is the official implementation of the paper 'Streaming Video Instruction Tu
 
 
 # News📰
+* **`[2026/2/27]`:**🎉**Our paper has been accepted by CVPR 2026!**
 * **`[2026/1/27]`:**🔥**We have released the Streamo-Instruct dataset.[[HF](https://huggingface.co/datasets/maifoundations/Streamo-Instruct-465K)].**
 * **`[2026/1/22]`:**🔥**We have released our training code.**
 * **`[2026/1/6]`:**🔥**We have released our website with more interesting demos [[Web](https://jiaerxia.github.io/Streamo/)].**
